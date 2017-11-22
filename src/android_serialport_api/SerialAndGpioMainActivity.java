@@ -1,10 +1,8 @@
 package android_serialport_api;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import android_serialport_api.sample.R;
-import android_serialport_api.sample.SerialPortActivity;
 
 /**
  * Created by HSP on 2017/11/19.

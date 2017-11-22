@@ -17,13 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="SerialPortPreferences" >
-        </activity>
-        <activity android:name="ConsoleActivity" >
-        </activity>
-        <activity android:name="LoopbackActivity" >
-        </activity>
-        <activity android:name="Sending01010101Activity"></activity>
     </application>
 
     <uses-sdk android:minSdkVersion="3" />

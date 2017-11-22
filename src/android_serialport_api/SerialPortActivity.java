@@ -136,10 +136,14 @@ public abstract class SerialPortActivity extends Activity {
 			mTty2ReadThread.interrupt();
 		if (mTty3ReadThread != null)
 			mTty3ReadThread.interrupt();
-		mTty2SerialPort.close();
-		mTty3SerialPort.close();
-		mTty3SerialPort = null;
-		mTty2SerialPort = null;
+		if (mTty2SerialPort != null) {
+			mTty2SerialPort.close();
+			mTty2SerialPort = null;
+		}
+		if (mTty3SerialPort != null) {
+			mTty3SerialPort.close();
+			mTty3SerialPort = null;
+		}
 		super.onDestroy();
 		Log.d("serialport", "destroy");
 	}
